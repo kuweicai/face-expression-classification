@@ -1,0 +1,13 @@
+net: "./examples/project/classify/mobilenet_v1/mobilenet_train.prototxt"
+test_iter: 50
+test_interval: 500
+base_lr: 0.0001
+momentum: 0.9
+momentum2: 0.999
+type: "Adam"
+lr_policy: "fixed"
+display: 100
+max_iter: 3000
+snapshot: 1000
+snapshot_prefix: "./examples/project/classify/mobilenet_v1/models/mobilenet_finetune"
+solver_mode: GPU
